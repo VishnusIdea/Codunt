@@ -73,11 +73,9 @@ th,td {
     border-radius: 5px;
     box-sizing: border-box;
   }
-  
-  
-  
+    
   .contact .button {
-    background-color: #ff0000;
+    background-color: orange;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -85,9 +83,7 @@ th,td {
     cursor: pointer;
   }
   
-  .contact.button :hover {
-    background-color: #122193;
-  }
+  
   
 
 main {

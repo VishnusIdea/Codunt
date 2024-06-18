@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-
     <meta name="auther" content="Vishnu" />
     <meta name="description" content="This is Html Courser" />
     <meta name="Keyword" content="Blog,html,html5" />
@@ -12,44 +10,98 @@
     <title> Responsive Blog </title>
     <link rel="shortcut icon" href="WelcomeAvather.gif" />
 </head>
-
 <body>
     <header>
-        <h1>My Blog</h1>
-
+        <h1>Welcome to My Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#states">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-        <article>
-            <h2>Click play button to play audio</h2>
-            <audio src="thank-you-99932.mp3" controls></audio>
-        </article>
+        <section id="states">
+            <h2>State of India</h2>
+            <article>
+                <h3>Kerala</h3>
+                <p>Named as one of the ten paradises of the world by National Geographic Traveler, <mark>Kerala is one
+                        of the prominent tourist destinations of India,</mark> with coconut-lined sandy beaches,
+                    backwaters, hill stations, Ayurvedic tourism, and tropical greenery as its major attractions.</p>
+                <figure>
+                    <img src="kerala.jpg" alt="Kerala" style="width:10%">
+                    <figcaption>Fig.1 - Kerala.</figcaption>
+                </figure>
+                <p>More about Kerala...</p>
+                <details>
+                    <summary>Read more</summary>
+                    <p>Kerala is well-known for its mesmerizing backwaters, ecotourism initiatives, scenic beauty,
+                        amazing beaches, and mouthwatering cuisine.</p>
+                </details>
+            </article>
 
+            <article>
+                <h3>Tamil Nadu</h3>
+                <p>Tamil Nadu is a state in southern India. It covers more than 50,200 square miles (130,000 square km).
+                    Tamil people constitute the majority of the state's population, and Tamil is the state's official
+                    language. <mark>Nadu's capital is Chennai,</mark> which is an industrial centre, but the state is
+                    essentially agricultural.</p>
+                <figure>
+                    <img src="tamilnadu.jpg" alt="Tamil Nadu" style="width:10%">
+                    <figcaption>Fig.2 - Tamil Nadu.</figcaption>
+                </figure>
+                <p>More about Tamil Nadu...</p>
+                <details>
+                    <summary>Read more</summary>
+                    <p>The Hindu temples and monuments at Mamallapuram have become famous tourist attractions. One of
+                        the many festivals in Tamil Nadu is the Koovagam festival, where thousands of people gather to
+                        celebrate their transgender identities. In Tamil Nadu Bharata natyam, Karnatak music, and movies
+                        are all widely popular.</p>
+                </details>
+            </article>
 
-        <aside>
-            <h2>Click play button to play video</h2>
-            <video src="do-u-know.mp4" controls width="640" height="360"></video>
-            <br>
+            <article>
+                <h3>Andhra Pradesh</h3>
+                <p>Andhra Pradesh is located on the southeastern coast of India and is <mark>the eighth largest state in
+                        the country.</mark> The state is bordered by Chhattisgarh to the north, Odisha to the northeast,
+                    Telangana and Karnataka to the west, Tamil Nadu to the south, and the Bay of Bengal to the east.</p>
+                <figure>
+                    <img src="andhra pradesh.png" alt="Andhra Pradesh" style="width:10%">
+                    <figcaption>Fig.3 - Andhra Pradesh.</figcaption>
+                </figure>
+                <p>More about Andhra Pradesh...</p>
+                <details>
+                    <summary>Read more</summary>
+                    <p>A few of the famous places here include Venkatagiri Fort, Udayagiri Fort, Sri Ranganathaswamy
+                        Temple, Jonnawada, Mypad Beach, Penchalakona, Pulicat Lake, and Nelapattu Bird Sanctuary.</p>
+                </details>
+            </article>
+        </section>
 
-            <h3> Autoplay Video With Control </h3>
-            <video autoplay controls width="640" height="360">
-                <source src="do-u-know.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <br>
+        <section id="about">
+            <h2>About Me</h2>
+            <h4>I'm Vishnu V</h4>
+            <p>I completed this website on <time datetime="2024-02-14 19:00"> tuesday day</time></p>
+        </section>
 
-
-            <h3>Autoplay Video WithOut Control </h3>
-            <video autoplay muted width="640" height="360">
-                <source src="do-u-know.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-        </aside>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Click Hear to send email to me  <a href="mailto:vishnuvijayakumar25vv@gmail.com?subject=Hey vishnu,">Email</a></p>
+        </section>
     </main>
-    <footer>
-        <p>&copy; 2024 My Blog. All rights reserved.</p>
-    </footer>
 
+    <aside>
+        <h1>This is aside section</h1>
+        <h2>Click play button to play audio</h2>
+        <audio src="thank-you-99932.mp3" controls></audio>
+        
+    </aside>
+
+    <footer>
+        <p>&copy; 2024 My Blog Website. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>

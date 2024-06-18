@@ -1,0 +1,113 @@
+nav {
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0.5rem;
+    
+}
+
+hr{
+    color: #1e1497;
+}
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    font-size: larger;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: orange;
+}
+
+.image {
+    height: 250px;
+    width: 300px;
+    margin-left: 60%;
+    background-color: #0c0553;
+    border-radius: 11%;
+}
+
+.cvbutton {
+    background-color:orange; 
+    border: none;
+    padding: 15px 32px;
+    font-size: 16px; 
+    margin: 4px 2px;
+   
+}
+
+
+table,th,td {
+    border: 2px solid #1e1497;
+    border-collapse: collapse;
+    background-color: rgb(248, 206, 129);
+}
+
+th,td {
+    padding: 20px;
+    color: #0c0553;
+}
+
+.contact {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .contact input,
+  .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  .contact .button {
+    background-color: #ff0000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .contact.button :hover {
+    background-color: #122193;
+  }
+  
+
+main {
+    padding: 1rem;
+}
+
+article {
+    margin-left: 150px;
+    margin-bottom: 65px;
+}
+
+aside {
+    border-left: 2px solid #333;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}

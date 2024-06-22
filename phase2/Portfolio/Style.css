@@ -103,13 +103,16 @@ h3[target] {
   position: relative;
   animation: rot 5s infinite;
 }
+
 @keyframes rot {
   0% {
     transform: rotate(20deg);
   }
+
   50% {
     transform: rotate(70deg);
   }
+
   100% {
     transform: rotate(20deg);
   }
@@ -121,7 +124,7 @@ marquee {
   font-size: 25px;
 }
 
-.av{
+.av {
   float: right;
   width: 150px;
   height: 100px;
@@ -165,6 +168,7 @@ a[target]:active {
   width: 100%;
   background-color: rgb(131, 131, 131);
 }
+
 .skills {
   margin-left: 57px;
   color: black;
@@ -181,18 +185,22 @@ a[target]:active {
   width: 80%;
   background-color: rgb(255, 165, 0);
 }
+
 .HTML {
   width: 100%;
   background-color: rgb(255, 165, 0);
 }
+
 .CSS {
   width: 100%;
   background-color: rgb(255, 165, 0);
 }
+
 .Reactjs {
   width: 80%;
   background-color: rgb(255, 165, 0);
 }
+
 .NET {
   width: 80%;
   background-color: rgb(255, 165, 0);
@@ -203,9 +211,11 @@ a[target]:active {
   height: 200px;
   border: 52px solid;
 }
+
 .picks img {
   transition: scale 400ms;
 }
+
 .picks:hover img {
   scale: 90%;
 }
@@ -246,4 +256,48 @@ a[target]:active {
 }
 
 @media screen and (max-width: 768px) {
+
+  .header {
+    width: 450px;
+  }
+
+  div.sticky {
+    margin-left: -29px;
+    width: 400px;
+    top: 40px;
+  }
+
+  .page {
+    padding-left: 65px;
+  }
+
+  .page1 {
+    width: 465px;
+    margin: -68px;
+  }
+  .page3 {
+    width: 465px;
+    margin: -68px;
+  }
+
+  .av {
+    width: 90px;
+  }
+
+  .Greet {
+    margin-top: -11px;
+    height: 170px;
+  }
+
+ 
+
+  .footer {
+    width: 400px;
+    margin: 50px -60px;
+  }
+
+  .contactfm {
+    width: 340px;
+  }
+
 }

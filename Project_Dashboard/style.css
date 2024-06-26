@@ -1,77 +1,49 @@
-body {
+* {
+    box-sizing: border-box;
+
     font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.header {
+.title {
     background-color: black;
-    text-align: center;
-    margin-top: -16px;
-    height: 26px;
+    display: flex;
+    justify-content: center;
+    margin: -18px;
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    margin: 41px 150px;
+    line-height: 25px;
+}
+
+#logoimage {
     height: 40px;
     width: 40px;
-    padding-left: 120px;
-    margin-top: -50px;
+
 }
 
-.logo-nm {
+#logo-nm {
     height: 40px;
     width: 40px;
-    padding-left: 170px;
-    margin-top: -50px;
 }
 
 
-
-nav {
-    display: flex;
-    justify-content: center;
-
-}
-
-nav ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    margin-top: 32px;
-}
-
-nav li a {
-    color: rgb(0, 0, 0);
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bolder;
-}
-
-
-
-
-.subnav {
-    margin-top: -51px;
-}
 
 .subnav_btn {
     font-size: 20px;
-    font-weight: bolder;
     border: none;
     color: black;
     background-color: inherit;
-    margin-left: 400px;
-
+    margin-left: 130px;
 }
 
 .subnav-content {
     display: none;
     background-color: rgb(96, 114, 228);
     width: 7%;
-    margin-left: 400px;
+
 }
 
 .subnav-content a {
@@ -83,122 +55,149 @@ nav li a {
     display: block;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: -87px;
+
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav li a {
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+
+}
 
 
 .button {
+    display: flex;
+    justify-content: flex-end;
+    margin: -40px 50px;
+    line-height: 25px;
+
+}
+
+
+#button1 {
     padding: 10px 36px;
     font-size: 20px;
     border: 2px solid;
     border-radius: 22px;
     color: rgb(96, 114, 228);
-    float: right;
-    margin-right: 204px;
-    margin-top: -70px;
+    margin-right: 10px;
 }
 
-.button1 {
+#button2 {
     padding: 10px 36px;
     font-size: 20px;
     border: 2px solid rgb(96, 114, 228);
     border-radius: 22px;
     color: rgb(255, 255, 255);
-    float: right;
-    margin-right: 45px;
-    margin-top: -70px;
     background-color: rgb(96, 114, 228);
 
 }
 
 
 
-
 .section1 {
-    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    margin: -75px 35px;
 }
 
-.section1_button1 {
+#section1_button1 {
     padding: 6px 14px;
-    margin-top: -5px;
+    margin-top: 145px;
     font-size: 12px;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 17px;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(255, 255, 255);
-    float: left;
     margin-left: 100px;
     background-color: rgb(134, 192, 161);
+    position: absolute;
 }
 
-.section1-infobt {
+
+#section1-infobt {
     color: rgb(35, 108, 69);
     margin-top: 150px;
     padding: 0px 172px;
 }
 
-.section1-text1 {
+#section1-text1 {
     font-size: 50px;
-    margin-left: 143px;
+    margin-left: 100px;
     font-weight: bolder;
     margin-top: 20px;
     color: rgb(0, 0, 0);
 }
 
 
-.section1-text2 {
+#section1-text2 {
     font-size: 15px;
-    margin-left: 143px;
+    margin-left: 100px;
     color: rgb(0, 0, 0);
     margin-top: -30px;
 }
 
-.section1-text3 {
+#section1-text3 {
     font-size: 15px;
-    margin: 30px 148px;
+    margin: 21px 100px;
 }
 
-.section1_button2 {
+#section1_button2 {
     padding: 10px 36px;
     font-size: 20px;
     border: 2px solid rgb(96, 114, 228);
     border-radius: 22px;
     color: rgb(255, 255, 255);
-    margin-left: 500px;
-    margin-top: -16px;
+    margin-left: 431px;
+    margin-top: -55px;
     background-color: rgb(96, 114, 228);
+    width: 125px;
 }
 
 
-.mail_input {
+#mail_input {
     padding: 10px 57px;
     font-size: 18px;
     border: 2px solid #cacaca;
     border-radius: 30px;
     background-color: #ffffffb8;
     margin-top: 10px;
-    margin-left: -500px;
+    margin-left: 90px;
     color: black;
+    width: 23%;
 }
 
-.mail_img {
-    width: 20px;
+#mail_img {
+    width: 35px;
     color: rgb(96, 114, 228);
-    margin-left: 150px;
-    margin-top: -43px;
-    border-radius: 40px;
+    margin-left: 100px;
+    margin-top: -42px;
+    border-radius: 30px;
     background-color: #c5c5c5;
-    padding: 10px;
+    padding: 9px;
+
 }
-
-
-
-
-
-
-
 
 
 .section2 {
-    margin-left: 150px;
+    flex-direction: row;
+    display: flex;
+    margin: 53px 143px;
+
 }
 
 .section2 ul {
@@ -215,77 +214,80 @@ nav li a {
 .section2 li i {
     text-decoration: none;
     font-size: 20px;
-    height: 15px;
-    padding: 6px;
-    overflow: hidden;
+    height: 21px;
+    padding: 10px;
+    width: 40px;
+    text-align: center;
 }
 
 
-.section2_user1 {
+#section2_user1 {
     background-color: rgb(255, 116, 116);
     color: red;
-    border: 1px solid;
-    border-radius: 30px;
-    width: 30px;
-    margin-right: -10px;
+    border: 1px solid white;
+    border-radius: 49px;
+    height: 40px;
+    margin-right: -16px;
 }
 
-.section2_user2 {
+#section2_user2 {
     background-color: rgb(240, 188, 93);
     color: orange;
-    border: 1px solid;
-    border-radius: 30px;
-    width: 30px;
-    margin-right: -10px;
+    border: 1px solid white;
+    border-radius: 49px;
+    height: 40px;
+    margin-right: -16px;
 }
 
-.section2_user3 {
+#section2_user3 {
     background-color: rgb(192, 255, 192);
     color: lightgreen;
-    border: 1px solid;
-    border-radius: 30px;
-    width: 30px;
-    margin-right: -10px;
+    border: 1px solid white;
+    border-radius: 49px;
+    height: 40px;
+    margin-right: -16px;
 }
 
-.section2_user4 {
+#section2_user4 {
     background-color: rgb(109, 153, 255);
     color: rgb(27, 79, 198);
-    border: 1px solid;
-    border-radius: 30px;
-    width: 30px;
-    margin-right: -10px;
+    border: 1px solid white;
+    border-radius: 49px;
+    height: 40px;
+    margin-right: -16px;
 }
 
-.star {
+
+
+
+#star {
     color: gold;
     margin-left: 40px;
 }
 
-.reviews {
-    margin: -25px 155px;
+#reviews {
+    margin: 65px 0px;
 }
 
-.reviews_value {
-    margin: 24px 160px;
+#reviews_value {
+    margin: 90px -55px;
     font-size: 15px;
 }
 
 
 
-
 .person_image {
-    background-color: rgba(135, 148, 235, 0.38);
-    border: 0px solid rgba(255, 255, 255, 0.753);
     width: 35%;
     float: right;
-    margin-top: -600px;
-    margin-right: 125px;
+    margin-top: -650px;
+    margin-right: 100px;
 }
 
 
 
 .card-data {
+    display: flex;
+    flex-direction: column;
     width: 16%;
     float: left;
     background-color: #fff;
@@ -297,30 +299,34 @@ nav li a {
     border: 1px solid black;
 }
 
-.card-data_desc2 {
+#card-data_desc2 {
     margin: 5px;
     font-size: 13px;
 }
 
-.card-data_desc3 {
+#card-data_desc3 {
     margin-left: 43px;
     font-size: 10px;
-    margin-top: -41px;
+    margin-top: -24px;
 }
 
-.card-data_desc4 {
-    margin-left: 140px;
+#card-data_desc4 {
+    margin-left: 123px;
     font-size: 12px;
     margin-top: -25px;
     font-weight: bold;
 }
 
-.card-data_desc1 {
+#card-data_desc5 {
+    margin: 2px 7px;
+}
+
+#card-data_desc1 {
     margin: 5px;
     font-size: 20px;
 }
 
-.card-data_button {
+#card-data_button {
     padding: 0px 5px;
     margin-top: -25px;
     font-size: 13px;
@@ -332,11 +338,10 @@ nav li a {
     background-color: rgba(234, 234, 234, 0.77);
 }
 
-.card-data i {
+#card-data i {
     margin-top: -23px;
     border-radius: 40px;
     background-color: #e7e7e7;
-    ;
     padding: 7px;
     float: inline-end;
 }
@@ -348,14 +353,108 @@ nav li a {
     border: 0px solid rgba(255, 255, 255, 0.753);
 }
 
-.container_scale {
+#container_scale {
     width: 100%;
     background-color: rgb(206, 206, 206);
     border-radius: 50px;
 }
 
-.container_measure {
+#container_measure {
     width: 80%;
     background-color: rgb(134, 192, 161);
     border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    .title {
+        width: 610px;
+    }
+
+    .logo {
+        margin: 20px;
+    }
+
+    .subnav_btn {
+        margin-left: 80px;
+    }
+
+    nav {
+        margin-left: 420px;
+        margin-top: -70px;
+    }
+
+    .button {
+        margin-right: -230px;
+        padding: 60px;
+
+    }
+
+
+
+
+    .section1 {
+        margin: -83px;
+        width: 640px;
+
+    }
+
+
+
+    #mail_input {
+        width: 40%;
+    }
+
+   
+
+
+    .section2 {
+        flex-direction: row;
+        display: flex;
+        margin: 53px 143px;
+
+    }
+
+   
+
+
+    .person_image {
+        margin: -13%;
+        width: 390px;
+    }
+
+
+
+    .card-data {
+        display: flex;
+        margin-top: -154px;
+        width: 233px;
+        margin-left: 54%;
+    }
 }

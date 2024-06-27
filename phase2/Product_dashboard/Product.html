@@ -8,63 +8,165 @@
     <meta name="Keyword" content="html,html5" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="Style.css" rel="stylesheet" />
-    <title>Vishnu_Portfolio</title>
+    <link rel="shortcut icon" href="logo.png" />
+    <title>VM custom motorcycle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 </head>
 
 
 <body>
-    <header>
-        
-            <h1 class="header_desc1">VM</h1>
-            <h2 class="header_desc2">customized <span style="color:black;">motorbike</span></h2>
 
-        <img src="logo.png" alt="logo" class="logo" />
-        <br>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li> <a href="#about">About</a></li>
-                <li> <a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <hr>
-        
-    </header>
-    <br>
-    <main>
-        <section id="home">
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" alt="logo" class="logo" />
+                <ul>
+                    <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul></ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+               
+            </nav>
+            <div class="header-text">
+                <h1> GET YOUR <br>
+                    <span>BEST BIKE!</span>
+                </h1>
+                <p>LET'S START DO YOUR <span>ORDER NOW!</span></p>
+                <button class="header_button">Order now</button>
+                <img src="manbike.png" alt="image" class="header-manbike" />
+            </div>
+        </div>
+    </div>
 
-            <article>
-              <div>
-                <img src="manbike.png" alt="image"  class="manbike" />
-                <h2 class="home_doce1">  GET YOUR <br>BEST BIKE!</h2>
-                <p class="home_doce2">LET'S START DO YOUR ORDER NOW!</p>
-                <button class="home_button">Order now</button>
-              </div>
+    <section id="about">
 
-            </article>
-        </section>
+        <div title="about_data">
+            <div><img src="ducati.png" alt="bike" title="bike" /></div>
+            <div>
+                <h1 target="_blank">DUCATI</h1>
+                <p>Ducati is an Italian motorcycle manufacturing company headquartered in Bologna, Italy.
+                    The company is directly owned by Italian automotive manufacturer Lamborghini, whose German
+                    parent company is Audi, itself owned by the Volkswagen Group.</p>
+            </div>
+        </div>
 
-        <section id="about">
+        <div title="about_data">
+            <div>
+                <h1 target="_blank">Thunderbike</h1>
+                <p>Thunderbike is a renowned custom motorcycle builder specializing in Harley-Davidson bikes, known for
+                    their high-quality craftsmanship and innovative designs.
+                    They offer bespoke builds, parts, and accessories that cater to Harley enthusiasts seeking unique
+                    and personalized rides.</p>
+            </div>
+            <div><img src="bike2.png" alt="bike" title="bike" /></div>
+        </div>
 
-            <div class="about-container">
-                <div>1</div>
-                <div>2</div>
-             
-              </div>
+        <div title="about_data">
+            <div><img src="bike3.png" alt="bike" title="bike" /></div>
+            <div>
+                <h1 target="_blank">Street Tracker Electric </h1>
+                <p>The Street Tracker electric custom motorcycle by Harley combines classic styling with modern electric
+                    performance.
+                    It features a sleek design, advanced technology, and powerful electric motor for an exhilarating
+                    ride.</p>
+            </div>
+        </div>
+        <div title="about_data">
+            <div>
+                <h1 target="_blank"> NINJA</h1>
+                <p>The Street Ninja is a sleek, agile bike designed for urban environments, blending speed and
+                    maneuverability for a smooth ride through city streets.
+                    Its compact frame and responsive handling make it perfect for navigating traffic and tight spaces
+                    with ease.</p>
+            </div>
+            <div><img src="bike4.png" alt="bike" title="bike" /></div>
+        </div>
 
-        </section>
+        <div title="about_data">
+            <div><img src="bike5.png" alt="bike" title="bike" /></div>
+            <div>
+                <h1 target="_blank">PULSAR</h1>
+                <p>The Street Pulsar bike is a popular motorcycle known for its sporty design and performance.
+                    It combines a powerful engine with advanced features, making it a favorite among enthusiasts and
+                    daily commuters alike.</p>
+            </div>
 
-    </main>
+        </div>
+
+        <div title="about_data">
+            <div>
+                <h1 target="_blank">RX100</h1>
+                <p>The Yamaha RX 100 is a legendary motorcycle known for its lightweight frame, powerful 98cc two-stroke
+                    engine, and iconic design, making it a favorite among enthusiasts for its speed and agility.
+                    Introduced in the 1980s, it remains popular for its performance and nostalgic appeal.</p>
+            </div>
+            <div><img src="bike6.png" alt="bike" title="bike" /></div>
+        </div>
+
+        <div title="about_data">
+            <div><img src="bike7.png" alt="bike" title="bike" /></div>
+            <div>
+                <h1 target="_blank">HONDA - CB500F </h1>
+                <p>The Honda CB500F is a versatile and lightweight naked bike, ideal for both urban commuting and
+                    weekend rides.
+                    It features a 471cc parallel-twin engine, offering a balanced mix of performance and fuel
+                    efficiency.</p>
+            </div>
+        </div>
+
+    </section>
+
 
     <section id="contact">
-        <aside>
+       <div class="container">
+           
 
-        </aside>
+             <div class="contact-left">
+                 <h1>Contact Me</h1>
+                 <p><i class="fas fa-paper-plane"></i>VM motorcycle</p>
+                <p> <i class="fas fa-phone-square-alt"></i>  1234567890</p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your name" required >
+                    <input type="number" name="number" placeholder="Your number" required >
+                     <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                     <button type="submit"  class="btn">send</button>
+                </form>
+            </div>
+        </div>
+       </div>
+
+
     </section>
 
 
 
+
+
+    <!-- java script -->
+
+
+<script>
+   var sidemenu = document.getElementById("sidemenu");
+
+   function openmenu(){
+     sidemenu.style.right = "0"
+   }
+
+   function closemenu(){
+     sidemenu.style.right = "-200px "
+   }
+
+</script>
 </body>
 
 </html>

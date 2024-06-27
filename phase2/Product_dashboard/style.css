@@ -122,7 +122,9 @@ a:hover {
     position:inherit;
     animation: change 1s infinite;
     padding: 1px;
+    
 }
+
 
 @keyframes change {
     0% {
@@ -324,7 +326,7 @@ nav ul .fas{
 }
 
 [title~="bike"] {
-    width: 200px;
+    width: 100px;
 }
 
 .contact-left, .contact-right {

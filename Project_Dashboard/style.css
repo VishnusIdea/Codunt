@@ -13,15 +13,26 @@ body {
     background-color: black;
     display: flex;
     justify-content: center;
-}
-
-#header {
     width: 100%;
-    height: 100vh;
 }
 
-.container {
-    padding: 10px 10px;
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 35px;
+}
+
+/*   -------   header -------*/
+
+header {
+    margin-left: 15px;
+    border: 0px solid rgba(255, 255, 255, 0.753);
 }
 
 .main {
@@ -30,13 +41,12 @@ body {
 }
 
 .logo {
-    width: 100px;
-    margin: 10px 150px;
+    width: 97px;
+    margin: 10px 100px;
 }
 
 .button {
     padding: 10px 36px;
-
 }
 
 .button1 {
@@ -45,7 +55,6 @@ body {
     border-radius: 22px;
     border: 2px solid;
     color: rgb(96, 114, 228);
-
 }
 
 .button2 {
@@ -55,7 +64,26 @@ body {
     border: 2px solid rgb(96, 114, 228);
     color: rgb(255, 255, 255);
     background-color: rgb(96, 114, 228);
+}
 
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 300px;
+    margin-top: -30px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
 }
 
 .subnav-btn {
@@ -64,14 +92,14 @@ body {
     color: rgb(0, 0, 0);
     background-color: inherit;
     cursor: pointer;
+    padding-right: 100px;
 }
 
 .subnav-content {
     display: none;
     background-color: rgb(96, 114, 228);
-    width: 150px;
+    width: 80px;
     position: absolute;
-    z-index: 1;
 }
 
 .subnav-content a {
@@ -87,29 +115,17 @@ body {
 
 
 
-nav {
+/* content */
+
+
+
+
+.content_area {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -40px;
-}
-
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 0px 20px;
-}
-
-nav ul li a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.about {
-   display: flex;
-  flex-direction: column;
-  margin: -35% 150px;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 60px 100px;
+    width: 110%;
 }
 
 .about-button1 {
@@ -117,7 +133,7 @@ nav ul li a {
     font-size: 12px;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 17px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     color: rgb(255, 255, 255);
     background-color: rgb(134, 192, 161);
     position: absolute;
@@ -129,14 +145,12 @@ nav ul li a {
     margin-left: 70px;
 }
 
-
 .about-text2 {
     font-size: 60px;
     font-weight: bolder;
     color: rgb(0, 0, 0);
     padding-top: 15px;
 }
-
 
 .about-text3 {
     font-size: 15px;
@@ -158,11 +172,17 @@ nav ul li a {
     background-color: rgb(96, 114, 228);
     width: 125px;
     margin-left: 50%;
+    margin-top: -45px;
+}
+
+.submit{
+    display: flex;
+    flex-direction: column;
 }
 
 .email {
     display: flex;
-    justify-content: flex-start;
+    justify-content: initial;
     padding-top: 30px;
 }
 
@@ -173,7 +193,7 @@ nav ul li a {
     border-radius: 30px;
     background-color: #ffffffb8;
     color: black;
-    width: 27%;
+    width: 45%;
 }
 
 .mail-img {
@@ -182,25 +202,13 @@ nav ul li a {
     color: rgb(96, 114, 228);
     border-radius: 30px;
     background-color: #c5c5c5;
-    padding: 6px 7px;
-    margin: 8px -317px;
-
+    padding: 6px 6px;
+    margin: 8px -43%;
 }
-
-
-
-
-
-
-
-
-
 
 .users {
     display: inline-block;
     list-style: none;
-    padding-top: 520px;
-    margin-left: 150px;
 }
 
 .users ul {
@@ -220,7 +228,6 @@ nav ul li a {
     width: 40px;
     text-align: center;
 }
-
 
 .users-user1 {
     background-color: rgb(255, 116, 116);
@@ -258,9 +265,6 @@ nav ul li a {
     margin-right: -16px;
 }
 
-
-
-
 .star {
     color: gold;
     margin-left: 40px;
@@ -277,43 +281,33 @@ nav ul li a {
 }
 
 
+/*--------     image     ---------*/
 
 
-
-
-
-
-
-
-
-
-/* 
-
-
-
-
-
-.person_image {
-    width: 35%;
-    float: right;
-    margin-top: -650px;
-    margin-right: 100px;
+.image-contanier {
+    display: grid;
 }
 
+.picture {
+    height: 329px;
+    width: 100%;
 
+}
+
+.person_image {
+    width: 70%;
+    margin: 40px 130px;
+}
 
 .card-data {
-    display: flex;
-    flex-direction: column;
-    width: 16%;
-    float: left;
+    width: 35%;
     background-color: #fff;
-    margin-top: -350px;
     border-radius: 8px;
-    margin-left: 70%;
-    height: 130px;
-    padding: 12px;
-    border: 1px solid black;
+    height: 155px;
+    padding: 5px;
+    border: 1px solid #d5caca;
+    margin-left: 320px;
+    margin-top: -40px;
 }
 
 #card-data_desc2 {
@@ -322,15 +316,11 @@ nav ul li a {
 }
 
 #card-data_desc3 {
-    margin-left: 43px;
     font-size: 10px;
-    margin-top: -24px;
 }
 
 #card-data_desc4 {
-    margin-left: 123px;
     font-size: 12px;
-    margin-top: -25px;
     font-weight: bold;
 }
 
@@ -363,7 +353,6 @@ nav ul li a {
     float: inline-end;
 }
 
-
 .container {
     margin-left: 15px;
     width: 200px;
@@ -372,7 +361,6 @@ nav ul li a {
 
 #container_scale {
     width: 100%;
-    background-color: rgb(206, 206, 206);
     border-radius: 50px;
 }
 
@@ -384,36 +372,15 @@ nav ul li a {
 
 
 
+                                                                           /*--------  media ---------*/
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-*/
 nav .fas {
     display: none;
 }
 
-
-
 @media screen and (max-width: 600px) {
-
-
     nav .fas {
         display: block;
         font-size: 25px;
@@ -423,7 +390,7 @@ nav .fas {
         background: rgb(96, 114, 228);
         position: fixed;
         top: 0;
-        right: -200px;
+        left:-200px;
         width: 200px;
         height: 100vh;
         padding-top: 50px;
@@ -436,74 +403,56 @@ nav .fas {
         margin: 25px;
     }
 
-    nav ul .fas {
+    nav  .fas {
         position: absolute;
         top: 25px;
-        left: 25px;
+        right: 25px;
         cursor: pointer;
     }
 
-
+    .column {
+        width: 100%;
+    }
 
     .title {
-        width: 610px;
+        width: 170%;
     }
-
+       
+    .main {
+        flex-direction: column;
+    }
+    
     .logo {
-        margin: 20px;
+        margin: 30px 30px;
+    }
+    
+    
+    
+    .content_area {
+        margin: 60px 5px;
+        width: 225%;
     }
 
-    .subnav_btn {
-        margin-left: 80px;
+    
+    .about-text1 {
+        color: rgb(35, 108, 69);
+        margin-left: 70px;
     }
-
-
-
-    .button {
-        margin-right: -230px;
-        padding: 60px;
-
+    
+    .about-text2 {
+        font-size: 50px;
+        padding-top: 40px;
     }
+  
 
-
-
-
-    .section1 {
-        margin: -83px;
-        width: 640px;
-
-    }
-
-
-
-    #mail_input {
-        width: 40%;
-    }
-
-
-
-
-    .section2 {
-        flex-direction: row;
-        display: flex;
-        margin: 53px 143px;
-
-    }
-
-
-
-
+  
     .person_image {
-        margin: -13%;
-        width: 390px;
+        width: 100%;
+   
     }
-
-
-
+    
     .card-data {
-        display: flex;
-        margin-top: -154px;
-        width: 233px;
-        margin-left: 54%;
+        width: 50%;
+        margin-top: -40px;
     }
 }

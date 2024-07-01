@@ -283,12 +283,12 @@ nav ul li a {
 
 .picture {
   height: 329px;
-  width: 100%;
+  width: 90%;
 }
 
 .person_image {
   width: 70%;
-  margin: 40px 130px;
+  margin: 40px 80px;
 }
 
 .card-data {
@@ -371,15 +371,6 @@ nav .fas {
 @media screen and (max-width: 600px) {
 
 
-  * {
-
- justify-content: center;
-    box-sizing: border-box;
-  }
-
-
-
-
   nav .fas {
     display: block;
     font-size: 25px;
@@ -410,7 +401,7 @@ nav .fas {
   }
 
   .column {
-    width: 100%;
+    width: 97%;
   }
 
   .title {
@@ -431,15 +422,16 @@ nav .fas {
   }
 
   .users {
-    margin: 0px 100px;
-  }
+    margin: 0px 70px;
   
+  }
+
   .mail-input {
     width: 80%;
   }
 
   .mail-img {
-    margin-left: -290px;
+   margin-left: -255px;
   }
 
   .about-button2 {
@@ -447,16 +439,14 @@ nav .fas {
     margin-top: 10px;
   }
 
-  .about-text1 {
-    color: rgb(35, 108, 69);
-    margin-left: 70px;
-  }
+ 
 
 
   .about-text2 {
-    font-size: 50px;
+    font-size: 30px;
     padding-top: 40px;
   }
+
   .person_image {
     width: 70%;
     margin: -90px 30px;

@@ -369,6 +369,17 @@ nav .fas {
 }
 
 @media screen and (max-width: 600px) {
+
+
+  * {
+
+ justify-content: center;
+    box-sizing: border-box;
+  }
+
+
+
+
   nav .fas {
     display: block;
     font-size: 25px;
@@ -419,12 +430,16 @@ nav .fas {
     width: 100%;
   }
 
+  .users {
+    margin: 0px 100px;
+  }
+  
   .mail-input {
     width: 80%;
   }
 
   .mail-img {
-    margin-left: -264px;
+    margin-left: -290px;
   }
 
   .about-button2 {
@@ -442,14 +457,9 @@ nav .fas {
     font-size: 50px;
     padding-top: 40px;
   }
-  .picture {
-    width: 100%;
-    margin: 1px -200px;
-  }
-
-
   .person_image {
-    width: 100%;
+    width: 70%;
+    margin: -90px 30px;
   }
 
   .card-data {

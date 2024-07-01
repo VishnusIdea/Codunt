@@ -24,31 +24,33 @@ body {
     padding: 10px 10px;
 }
 
-.main{
+.main {
     display: flex;
     justify-content: space-between;
 }
 
 .logo {
     width: 100px;
+    margin: 10px 150px;
 }
 
-.button{
+.button {
     padding: 10px 36px;
-   
+
 }
+
 .button1 {
     padding: 10px 36px;
     font-size: 20px;
     border-radius: 22px;
     border: 2px solid;
     color: rgb(96, 114, 228);
-  
+
 }
 
 .button2 {
     padding: 10px 36px;
-   font-size: 20px;
+    font-size: 20px;
     border-radius: 22px;
     border: 2px solid rgb(96, 114, 228);
     color: rgb(255, 255, 255);
@@ -89,12 +91,13 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: -40px;
 }
 
 nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 0px 20px;
 }
 
 nav ul li a {
@@ -103,145 +106,113 @@ nav ul li a {
     font-size: 20px;
 }
 
-
-/* 
-
-
-
-
-
-
-nav {
-    display: flex;
-    justify-content: center;
-    margin-top: -87px;
-
+.about {
+   display: flex;
+  flex-direction: column;
+  margin: -35% 150px;
 }
 
-nav ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-
-nav li a {
-    color: rgb(0, 0, 0);
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-
-}
-
-
-
-
-
-
-.section1 {
-    display: flex;
-    flex-direction: column;
-    margin: -75px 35px;
-}
-
-#section1_button1 {
+.about-button1 {
     padding: 6px 14px;
-    margin-top: 145px;
     font-size: 12px;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 17px;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(255, 255, 255);
-    margin-left: 100px;
     background-color: rgb(134, 192, 161);
     position: absolute;
+    margin: -5px;
 }
 
-
-#section1-infobt {
+.about-text1 {
     color: rgb(35, 108, 69);
-    margin-top: 150px;
-    padding: 0px 172px;
+    margin-left: 70px;
 }
 
-#section1-text1 {
-    font-size: 50px;
-    margin-left: 100px;
+
+.about-text2 {
+    font-size: 60px;
     font-weight: bolder;
-    margin-top: 20px;
     color: rgb(0, 0, 0);
+    padding-top: 15px;
 }
 
 
-#section1-text2 {
+.about-text3 {
     font-size: 15px;
-    margin-left: 100px;
     color: rgb(0, 0, 0);
-    margin-top: -30px;
+    padding-top: 30px;
 }
 
-#section1-text3 {
+.about-text4 {
     font-size: 15px;
-    margin: 21px 100px;
+    padding-top: 20px;
 }
 
-#section1_button2 {
+.about-button2 {
     padding: 10px 36px;
     font-size: 20px;
     border: 2px solid rgb(96, 114, 228);
     border-radius: 22px;
     color: rgb(255, 255, 255);
-    margin-left: 431px;
-    margin-top: -55px;
     background-color: rgb(96, 114, 228);
     width: 125px;
+    margin-left: 50%;
 }
 
+.email {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 30px;
+}
 
-#mail_input {
+.mail-input {
     padding: 10px 57px;
     font-size: 18px;
     border: 2px solid #cacaca;
     border-radius: 30px;
     background-color: #ffffffb8;
-    margin-top: 10px;
-    margin-left: 90px;
     color: black;
-    width: 23%;
+    width: 27%;
 }
 
-#mail_img {
-    width: 35px;
+.mail-img {
+    width: 30px;
+    height: 30px;
     color: rgb(96, 114, 228);
-    margin-left: 100px;
-    margin-top: -42px;
     border-radius: 30px;
     background-color: #c5c5c5;
-    padding: 9px;
+    padding: 6px 7px;
+    margin: 8px -317px;
 
 }
 
 
-.section2 {
-    flex-direction: row;
-    display: flex;
-    margin: 53px 143px;
 
+
+
+
+
+
+
+
+.users {
+    display: inline-block;
+    list-style: none;
+    padding-top: 520px;
+    margin-left: 150px;
 }
 
-.section2 ul {
+.users ul {
     display: flex;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
-.section2 li {
+.users li {
     margin-top: 60px;
 }
 
-.section2 li i {
+.users li i {
     text-decoration: none;
     font-size: 20px;
     height: 21px;
@@ -251,7 +222,7 @@ nav li a {
 }
 
 
-#section2_user1 {
+.users-user1 {
     background-color: rgb(255, 116, 116);
     color: red;
     border: 1px solid white;
@@ -260,7 +231,7 @@ nav li a {
     margin-right: -16px;
 }
 
-#section2_user2 {
+.users-user2 {
     background-color: rgb(240, 188, 93);
     color: orange;
     border: 1px solid white;
@@ -269,7 +240,7 @@ nav li a {
     margin-right: -16px;
 }
 
-#section2_user3 {
+.users-user3 {
     background-color: rgb(192, 255, 192);
     color: lightgreen;
     border: 1px solid white;
@@ -278,7 +249,7 @@ nav li a {
     margin-right: -16px;
 }
 
-#section2_user4 {
+.users-user4 {
     background-color: rgb(109, 153, 255);
     color: rgb(27, 79, 198);
     border: 1px solid white;
@@ -290,19 +261,35 @@ nav li a {
 
 
 
-#star {
+.star {
     color: gold;
     margin-left: 40px;
 }
 
-#reviews {
-    margin: 65px 0px;
+.reviews {
+    padding-left: 180px;
+    margin-top: -32px;
 }
 
-#reviews_value {
-    margin: 90px -55px;
+.reviews_value {
     font-size: 15px;
+    padding-left: 179px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
 
 
 

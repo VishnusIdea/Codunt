@@ -1,5 +1,5 @@
 
-"use strict";
+
 
 let daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 let today = new Date().getDay();
@@ -103,7 +103,7 @@ const c_text = document.getElementById('c_text');
 const d_text = document.getElementById('d_text');
 const submitBtn = document.getElementById('submit');
 
-
+"use strict";
  currentQuiz = 0;
 let score = 0;
 let answerq = "";

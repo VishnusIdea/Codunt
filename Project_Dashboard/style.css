@@ -28,7 +28,7 @@ body {
   padding: 35px;
 }
 
-/*   -------   header -------*/
+
 
 header {
   margin-left: 15px;
@@ -113,7 +113,7 @@ nav ul li a {
   display: block;
 }
 
-/* content */
+
 
 .content_area {
   display: flex;
@@ -141,7 +141,7 @@ nav ul li a {
 }
 
 .about-text2 {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: bolder;
   color: rgb(0, 0, 0);
   padding-top: 15px;
@@ -275,51 +275,31 @@ nav ul li a {
   padding-left: 179px;
 }
 
-/*--------     image     ---------*/
 
-.image-contanier {
-  display: grid;
-}
 
-.picture {
-  height: 329px;
-  width: 100%;
-}
 
 .person_image {
   width: 70%;
   margin: 40px 80px;
 }
 
+
+
 .card-data {
-  width: 35%;
+  width: 20%;
   background-color: #fff;
   border-radius: 8px;
   height: 155px;
   padding: 5px;
   border: 1px solid #d5caca;
-  margin-left: 320px;
-  margin-top: -40px;
+  margin: -340px 250px;
+  position: absolute;
 }
 
 #card-data_desc2 {
   margin: 5px;
   font-size: 13px;
 }
-
-#card-data_desc3 {
-  font-size: 10px;
-}
-
-#card-data_desc4 {
-  font-size: 12px;
-  font-weight: bold;
-}
-
-#card-data_desc5 {
-  margin: 2px 7px;
-}
-
 #card-data_desc1 {
   margin: 5px;
   font-size: 20px;
@@ -337,7 +317,7 @@ nav ul li a {
   background-color: rgba(234, 234, 234, 0.77);
 }
 
-#card-data i {
+.card-data i {
   margin-top: -23px;
   border-radius: 40px;
   background-color: #e7e7e7;
@@ -362,14 +342,40 @@ nav ul li a {
   border-radius: 50px;
 }
 
-/*--------  media ---------*/
+.user{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#card-data_desc3 {
+  font-size: 10px;
+  align-content: center;
+  margin-left: -120px;
+}
+
+#card-data_desc4 {
+  font-size: 12px;
+  font-weight: bold;
+  align-content: center;
+  
+
+}
+
+#card-data_desc5 {
+  margin: 2px 7px;
+}
+
+
+
+
+
 
 nav .fas {
   display: none;
 }
 
 @media screen and (max-width: 600px) {
-
 
   nav .fas {
     display: block;
@@ -393,15 +399,21 @@ nav .fas {
     margin: 25px;
   }
 
+  #close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    cursor: pointer;
+  }
   nav .fas {
     position: absolute;
     top: 50px;
-    right: 25px;
+    right: 0px;
     cursor: pointer;
   }
-
   .column {
-    width: 97%;
+    width: 80%;
+    padding: 20px;
   }
 
   .title {
@@ -415,13 +427,13 @@ nav .fas {
   .logo {
     margin: 30px 30px;
   }
+
   .button {
     padding: 20px;
   }
 
   .content_area {
     margin: 60px 5px;
-    width: 100%;
   }
 
   .users {
@@ -442,7 +454,6 @@ nav .fas {
     margin-top: 10px;
   }
 
- 
   .about-text2 {
     font-size: 30px;
     padding-top: 40px;
@@ -450,11 +461,20 @@ nav .fas {
 
   .person_image {
     width: 70%;
-    margin: -170px 30px;
+    margin: -90px 30px;
   }
 
   .card-data {
-    width: 50%;
-    margin: -68px 100px;
+    width: 70%;
+    margin: -50px 100px;
   }
+
+  #card-data_desc3 {
+    margin-left: -80px;
 }
+
+}
+
+
+
+

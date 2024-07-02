@@ -14,13 +14,13 @@
 
 <body>
 
-    
-        <div class="title">
-            <p style="color: white;">This announcement banner can be used to inform visitors of
-                <span style="color: rgba(254, 229, 0, 0.695);"> something important!</span>
-            </p>
-        </div>
-   
+
+    <div class="title">
+        <p style="color: white;">This announcement banner can be used to inform visitors of
+            <span style="color: rgba(254, 229, 0, 0.695);"> something important!</span>
+        </p>
+    </div>
+
 
     <div class="header">
 
@@ -43,7 +43,7 @@
                     <li><a href="#">Pricing</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Company</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
+                    <i id="close" class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
             </ul>
             <i class="fas fa-bars" onclick="openmenu()"></i>
@@ -67,14 +67,14 @@
                 <p class="about-text3">Lorem ipsum dolor sit amet consectetut integer counsequat ex id tortot
                     molestie<br>
                     accumsan sedmi sed porta auctor,turpic sapien.</p>
-<div class="submit">
-                <div class="email">
-                    <input type="email" placeholder="Enter Your Email" class="mail-input" />
-                    <p class="mail-img"><i class="fa-solid fa-envelope"></i> </p>
+                <div class="submit">
+                    <div class="email">
+                        <input type="email" placeholder="Enter Your Email" class="mail-input" />
+                        <p class="mail-img"><i class="fa-solid fa-envelope"></i> </p>
+                    </div>
+                    <button class="about-button2">Button</button>
+                    <p class="about-text4"><sup style="color: red;">*</sup>short description can be added here.</p>
                 </div>
-                <button class="about-button2">Button</button>
-                <p class="about-text4"><sup style="color: red;">*</sup>short description can be added here.</p>
-            </div>
 
 
                 <div class="users">
@@ -95,32 +95,33 @@
 
         <div class="column">
 
-          <div class="image-contanier">
-            <div class="picture">
-
-                <img src="Person.png" alt="person_image" class="person_image" style="max-width:100%;height:auto;" />
-
-            </div>
-                <div class="card-data">
-                    <h1 id="card-data_desc1">Basic Plan</h1>
-                    <button id="card-data_button">Monthly</button>
-                    <i id="fa-solid fa-ellipsis"></i>
-                    <p id="card-data_desc2">Short description here</p>
+            <img src="Person.png" alt="person_image" class="person_image" style="max-width:100%;height:auto;" />
+        </div>
+        <div class="column">
+            <div class="card-data">
+                <h1 id="card-data_desc1">Basic Plan</h1>
+                <button id="card-data_button">Monthly</button>
+                <i class="fa-solid fa-ellipsis"></i>
+                <p id="card-data_desc2">Short description here</p>
+                <div class="user">
                     <h1 id="card-data_desc5">$8</h1>
                     <p id="card-data_desc3">/month</p>
                     <p id="card-data_desc4">16 of 24 users</p>
+                </div>
 
-                    <div class="container">
-                        <div id="container_scale">
-                            <div id="container_measure">
-                                &nbsp;
-                            </div>
+
+                <div class="container">
+                    <div id="container_scale">
+                        <div id="container_measure">
+                            &nbsp;
                         </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
+
+    </div>
     </div>
 
     <script>

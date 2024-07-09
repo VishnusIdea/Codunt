@@ -5,8 +5,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-
-.container {
+.container{
     width: 50%;
     background: #fff;
     margin: 100px auto 20px;
@@ -15,16 +14,14 @@
     line-height: 70px;
 }
 
-
-.containers {
+.containers{
     width: 100%;
     min-height: 100vh;
     background: #00abff;
     padding: 10px;
 }
 
-h1,
-h2 {
+h1,h2 {
     display: flex;
     justify-content: center;
     line-height: 61px;
@@ -32,8 +29,7 @@ h2 {
     font-family: initial;
 }
 
-span,
-label {
+span,label{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
     color: #00abff;
@@ -46,7 +42,7 @@ input {
     border: 3px solid #00abff;
 }
 
-button {
+  button{
     border: none;
     outline: none;
     padding: 16px 50px;
@@ -93,7 +89,6 @@ p {
 
     }
 
-
-
-
 }
+
+

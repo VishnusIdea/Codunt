@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(0deg, white, #cb6161);
+  animation: rot 2s infinite;
+}
+
+@keyframes rot {
+    0% {
+        background: linear-gradient(180deg, white, #cb6161);
+    }
+    50% {
+        background: linear-gradient(90deg, white, #cb6161);
+    }
+
+    100% {
+        background: linear-gradient(270deg, white, #cb6161);
+    }
+}
+
+.title {
+  margin: 20px 0;
+}
+
+.main {
+  border: 10px solid white;
+  border-radius: 25px;
+  overflow: hidden;
+  color: #cb6161;
+}
+
+.name {
+  display: flex;
+  font-size: 32px;
+  font-weight: 8px 16px;
+  color: #7e7e7e;
+  background-color: #ebebeb;
+  border: 3px solid #cb6161;
+}
+
+.name > span {
+  color: #cb6161;
+}
+
+.name-input {
+  font-size: 25px;
+  font-weight: 700;
+  color: #7e7e7e;
+  flex-grow: 1;
+  border: none;
+  margin: 0px 12px;
+  outline: none;
+  background-color: #ebebeb;
+}
+
+.massage-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+  width: 400px;
+  height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.message-left,
+.message-right {
+  list-style: none;
+  padding: 8px 12px;
+  margin: 12px;
+  max-width: 250px;
+  font-size: 18px;
+  word-wrap: break-word;
+}
+
+.message-left {
+  border-radius: 20px 20px 20px 0px;
+  align-self: flex-start;
+  background-color: #fff;
+  box-shadow: 29px 10px 4px #dcdcdc;
+}
+
+.message-right {
+  border-radius: 20px 20px 0px 0px;
+  align-self: flex-end;
+  background-color: #cb6161;
+  box-shadow: -29px 10px 4px #dcdcdc;
+  color: #fafafa;
+}
+
+.message-left > p > span,
+.message-right > p > span {
+  display: block;
+  font-style: italic;
+  font-size: 12px;
+  margin-left: 4px;
+}
+
+.feedback {
+  font-style: italic;
+  font-size: 14px;
+  padding: 0px 16px 16px 16px;
+  color: #2d2d2d;
+  text-align: center;
+}
+
+.message-form {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+}
+
+.message-input {
+  flex-grow: 1;
+  height: 48px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 0 12px;
+  background-color: #fff;
+  border: 1px solid #cb6161;
+}
+
+.send-button {
+  height: 48px;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  padding: 0px 20px;
+  outline: none;
+  background-color: #cb6161;
+  color: black;
+  cursor: pointer;
+}
+
+h3 {
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  justify-content: center;
+}
+
+.v-divider {
+  height: 48px;
+  width: 2px;
+  background-color: #f6f6f6;
+}
+
+.client-total {
+  margin: 20px 0;
+  color: #7e7e7e;
+}

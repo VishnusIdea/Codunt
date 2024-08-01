@@ -10,3 +10,7 @@
 ![alt text](0utput-4.png)
 #part 5
 ![alt text](0utput-5.png)
+
+
+#part 6  (website mobile view)
+![alt text](output-6.jpeg)

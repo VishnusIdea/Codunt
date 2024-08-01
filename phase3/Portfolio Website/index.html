@@ -28,12 +28,13 @@
             <nav>
                 <ul>
                     <ul id="sidemenu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#mywork">My Work</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul></ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#mywork">My Work</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
         </div>
@@ -187,73 +188,76 @@
 
         </div>
     </section>
+    <div class="full-img" id="fullImgBox">
+        <span onclick="closeFullImg()">X</span>
+        <div class="imagebox">
+            <div class="textdata">
+                <h3 id="boxheading">This is my final year project</h3>
+                <p id="content">Frontend is react then backend is SQL</p>
+            </div>
+            <div class="contanier-view">
+                <table>
+                    <tr>
+                        <td class="cards">
+                            <img src="slide1.png" alt="output" id="img1">
+                        </td>
+                        <td class="cards">
+                            <img src="slide2.png" alt="output" id="img2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cards">
+                            <img src="slide3.png" alt="output" id="img3">
+                        </td>
+
+                        <td class="cards">
+                            <img src="slide4.png" alt="output" id="img4">
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    
 
     <section id="mywork">
-        <div class="work">
 
-            <h1 target="heding">My &nbsp;<span title="heding-span"> Work</span></h1>
+        <h1 target="heding">My &nbsp;<span title="heding-span"> Work</span></h1>
+        <div class="work">
 
             <div class="work-viewport">
 
                 <ol class="image-viweport">
                     <li class="slide">
                         <div class="img-gallery">
-                            <div class="snapper" style="background-image: url(slide1.png) ;">
-                                <button class="btn-to-see" id="clilck1" onclick="loddata(0)">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    To See
-                                </button>
+                            <div class="snapper" style="background-image: url(slide1.png) ;" id="clilck1"
+                                onclick="loddata(0)">
+
                                 <div class="btn-bg">&nbsp;</div>
                             </div>
                     </li>
                     <li class="slide">
-                        <div class="snapper" style="background-image: url(slide2.png) ;">
-                            <button class="btn-to-see" onclick="loddata(1)">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                To See
-                            </button>
+                        <div class="snapper" style="background-image: url(slide2.png) ;" onclick="loddata(1)">
+
                             <div class="btn-bg">&nbsp;</div>
                         </div>
                     </li>
                     <li class="slide">
-                        <div class="snapper" style="background-image: url(slide3.png) ;">
-                            <button class="btn-to-see" onclick="loddata(2)">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                To See
-                            </button>
+                        <div class="snapper" style="background-image: url(slide3.png) ;" onclick="loddata(2)">
+
                             <div class="btn-bg">&nbsp;</div>
                         </div>
                     </li>
                     <li class="slide">
-                        <div class="snapper" style="background-image: url(slide4.png) ;">
-                            <button class="btn-to-see" onclick="loddata(3)">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                To See
-                            </button>
+                        <div class="snapper" style="background-image: url(slide4.png) ;" onclick="loddata(3)">
+
                             <div class="btn-bg">&nbsp;</div>
                         </div>
                     </li>
                     <li class="slide">
-                        <div class="snapper" style="background-image: url(slide5.png) ;">
-                            <button class="btn-to-see" onclick="loddata(4)">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                To See
-                            </button>
+                        <div class="snapper" style="background-image: url(slide5.png) ;" onclick="loddata(4)">
+
                             <div class="btn-bg">&nbsp;</div>
                         </div>
                     </li>
@@ -261,42 +265,10 @@
             </div>
 
 
-            <div class="full-img" id="fullImgBox">
-                <span onclick="closeFullImg()">X</span>
-                <div class="imagebox">
-                    <div class="textdata">
-                        <h3 id="boxheading">This is my final year project</h3>
-                        <p id="content">Frontend is react then backend is SQL</p>
-                    </div>
-                    <div class="contanier-view">
-                        <table>
-                            <tr>
-                                <td class="cards">
-                                    <img src="slide1.png" alt="output" id="img1">
-                                </td>
-                                <td class="cards">
-                                    <img src="slide2.png" alt="output" id="img2">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="cards">
-                                    <img src="slide3.png" alt="output" id="img3">
-                                </td>
-
-                                <td class="cards">
-                                    <img src="slide4.png" alt="output" id="img4">
-                                </td>
-
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
-    <br>
-    <br>
-    <br>
+
+
+
     <br>
 
     <section id="contact">
@@ -328,24 +300,24 @@
                 </div>
             </div>
         </div>
-   
 
-   
-</section>
 
-<div class="footer">
-    <h3>&copy; Made by <span title="heding-span">Vishnu V </span> with. HTML, CSS and JavaScript.</h3>
 
-    <a href="https://www.linkedin.com/in/vishnu-vijayakumar-893925221/">
-        <i class="fab fa-linkedin"></i></a>
+    </section>
 
-    <a href="https://github.com/VishnusIdea">
-        <i class="fab fa-github-square"></i> </a>
+    <div class="footer">
+        <h3>&copy; Made by <span title="heding-span">Vishnu V </span> with. HTML, CSS and JavaScript.</h3>
 
-    <a href="mailto:vishnuvijayakumar25vv@gmail.com?subject=Hey Vishnu V,  I visited your website&body=Hello">
-        <i class="far fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/vishnu-vijayakumar-893925221/">
+            <i class="fab fa-linkedin"></i></a>
 
-</div>
+        <a href="https://github.com/VishnusIdea">
+            <i class="fab fa-github-square"></i> </a>
+
+        <a href="mailto:vishnuvijayakumar25vv@gmail.com?subject=Hey Vishnu V,  I visited your website&body=Hello">
+            <i class="far fa-envelope"></i></a>
+
+    </div>
 
 
     <script src="script.js"></script>

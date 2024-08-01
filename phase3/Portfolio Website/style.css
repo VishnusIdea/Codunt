@@ -204,7 +204,6 @@ h1[target] {
   flex-direction: column;
   line-height: 100px;
   font-size: 25px;
-  padding: 100px;
 }
 
 .app-img1 {
@@ -241,8 +240,7 @@ h1[target] {
 
 .about-skills {
   display: flex;
-  justify-content: space-between;
-  margin: 30px;
+  justify-content: space-evenly;
 }
 
 .skills-titles {
@@ -251,7 +249,7 @@ h1[target] {
   line-height: 130px;
   color: rgb(255, 132, 32);
   text-transform: uppercase;
-  margin-top: -40px;
+
 }
 
 .title-link {
@@ -400,7 +398,7 @@ h1[target] {
   box-shadow: 0px 5px 10px 0px #0a0a0a7c;
 }
 
-.cards + .cards {
+.cards+.cards {
   margin-left: 1%;
 }
 
@@ -408,7 +406,7 @@ h1[target] {
   transform: rotate(-6deg);
 }
 
-.cards:hover ~ .cards {
+.cards:hover~.cards {
   translate: 80px;
 }
 
@@ -465,9 +463,11 @@ h1[target] {
 }
 
 .full-img img {
-  max-height: 89%;
+  max-height: 88%;
   margin: 4px;
   transition: scale 400ms;
+  width: 150px;
+
 }
 
 .full-img span {
@@ -617,6 +617,7 @@ textarea {
   margin: 20px;
 }
 
+
 nav .fas {
   display: none;
 }
@@ -626,6 +627,8 @@ nav .fas {
 /*----------------------------------- Tablet view --------------------*/
 
 @media screen and (max-width: 834px) {
+
+ 
   nav .fas {
     display: block;
     font-size: 25px;
@@ -655,93 +658,121 @@ nav .fas {
     cursor: pointer;
   }
 
+
   .home-content {
     flex-direction: column-reverse;
     align-items: center;
-    margin: 70px;
+    font-size: 20px;
+    height: 20vh;
+  }
+
+  .home-content p {
+    font-size: 15px;
   }
 
   .bg {
-    height: 270px;
     width: 29%;
   }
 
   .about {
-    padding: 100px 35px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  #mywork {
+    padding: 100px 0px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 40px;
-  }
-
-  #mywork {
-    margin: 60px 0px;
     background-image: url(background.png);
   }
 
+  .about-skills {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
+  .skills-circle {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+  }
+
+  .skills-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .skills-titles {
+    justify-content: center;
+    flex-direction: row;
+    line-height: 135px;
+    gap: 25px;
+  }
+
+  .imagebox {
+    display: flex;
+    flex-direction: column;
+    height: 35%;
+    margin: 53px;
+  }
+
   .work {
-    height: 40vh;
+    height: 50vh;
+  }
+
+  .about-img {
+    width: 100px;
   }
 
   .work-viewport {
     height: 35vh;
   }
 
-  .details {
-    margin: -20px 80px;
-  }
-
-  .imagebox {
-    display: flex;
-    flex-direction: column;
-    margin: -69px 66px;
+  .cards {
+    width: 46px;
+    height: 70px;
   }
 
   .textdata h3 {
-    font-size: 20px;
+    font-size: 10px;
   }
 
   .textdata p {
-    font-size: 15px;
+    font-size: 10px;
   }
-
-  .imagebox {
-    display: flex;
-    flex-direction: column;
-    height: 80%;
-    margin: 53px;
+  .work {
+    height: 37vh;
   }
-
-  .full-img img {
-    max-height: 90px;
-    margin: 10px 15px;
-    width: 164px;
-  }
-
-  .cards {
-    width: 20px;
-    height: 9px;
-    box-shadow: -5px 5px 10px 0px #dbd5d57d;
-  }
-
-  #contact{
-    margin: 0px;
-  }
-
   .contact-form {
-    width: 65%;
-    margin: 2% 16%;
+    width: 62%;
+    margin: 4% 20%;
   }
+
 }
 
-/*---------------  mobile view------------------
+@media screen and (max-width : 768), (orientation:landscape){
+  
+  .home-content {
+    height: 50vh;
+  }
 
-@media (max-width: 600px) {
+}
+
+
+/*---------------  mobile view------------------*/
+
+
+
+
+@media screen and (max-width: 480px) {
  
   .home-content {
-    flex-direction: column-reverse;
-    align-items: center;
-    margin: 15px 50px;
+    margin: 230px 50px;
   }
 
   .bg {
@@ -749,11 +780,7 @@ nav .fas {
     width: 45%;
   }
 
-  .home-content p {
-    font-size: 15px;
-  }
-
-  .about {
+ .about {
     padding: 100px 35px;
   }
 
@@ -765,65 +792,16 @@ nav .fas {
     display: none;
   }
 
-
-
-  .about-links {
-    padding: 34px;
-  }
-
-  .about-skills {
-    margin: 20px;
-    flex-direction: column;
-  }
-
-  .skills-titles {
-    justify-content: space-between;
-    flex-direction: row;
-  }
-
-  .details {
-    margin: 14px -60px;
-    width: 2px;
-  }
-
-  .work-viewport {
-    height: 70vh;
-  }
-
-  .btn-to-see {
-    margin: 200px 10px;
-  }
-
-  .imagebox {
-    flex-direction: column-reverse;
-  }
-
   .cards {
-    width: 190px;
-    height: 160px;
-  }
-
-  .cards img {
-    width: 176px;
-    height: 150px;
-  }
-
-  .contanier-view {
-    margin: -130px 0px;
-  }
-
-  .textdata {
-    margin: -30px;
+    width: 46px;
   }
 
   .textdata h3 {
-    width: 100%;
-    line-height: 30px;
+    font-size: 10px;
   }
 
   .textdata p {
-    line-height: 25px;
-    font-size: 15px;
+    font-size: 10px;
   }
 
   .contact-form {
@@ -832,7 +810,7 @@ nav .fas {
   }
 
   .work {
-    height: 85vh;
+    height: 37vh;
   }
 
   .footer {
@@ -841,115 +819,3 @@ nav .fas {
 }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-
-
-@media (max-width: 1024px) {
-
-  .home-content {
-    flex-direction: column-reverse;
-    align-items: center;
-    margin: 70px;
-  }
-  
-  .bg {
-    height: 270px;
-    width: 29%;
-  }
-  .home-content p {
-    font-size: 15px;
-  }
-  
-  .about{
-    padding: 100px 35px;
-  }
-  
-  .details {
-    margin: -20px 80px;
-  }
-  
-  .work-viewport {
-    height: 50vh;
-  }
-  
-  .btn-to-see {
-    margin: 200px 70px;
-  }
-  
-  .contact-form {
-    width: 65%;
-    margin: 2% 16%;
-  }
-  
-  .work {
-    height: 85vh;
-  }
-  
-
-} 
-  
-
-
-/*
-
-
-@media (max-width: 768px) {
-  .home-content {
-    flex-direction: column-reverse;
-    align-items: center;
-    margin: 70px;
-  }
-  
-  .bg {
-    height: 270px;
-    width: 29%;
-  }
-  .home-content p {
-    font-size: 15px;
-  }
-  
-  .about{
-    padding: 100px 35px;
-  }
-  
-  .details {
-    margin: -20px 80px;
-  }
-  
-  .work-viewport {
-    height: 50vh;
-  }
-  
-  .btn-to-see {
-    margin: 200px 70px;
-  }
-  
-  .contact-form {
-    width: 65%;
-    margin: 2% 16%;
-  }
-  
-  .work {
-    height: 85vh;
-  }
-   
-} */

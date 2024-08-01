@@ -772,16 +772,16 @@ nav .fas {
 @media screen and (max-width: 480px) {
  
   .home-content {
-    margin: 360px 50px;
+    margin: 700px 5px;
   }
-  
+
   .bg {
     height: 250px;
     width: 45%;
   }
 
  .about {
-    padding: 100px 35px;
+    padding: 100px 5px;
   }
 
   .about-box {

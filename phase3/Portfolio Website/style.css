@@ -792,7 +792,7 @@ nav .fas {
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (orientation:landscape) {
 
   .home-content {
     flex-direction: column-reverse;
@@ -842,7 +842,7 @@ nav .fas {
 
 /*---------------  mobile view------------------*/
 
-@media (max-width: 700px) {
+@media (max-width: 480px) {
   nav .fas {
     display: block;
     font-size: 25px;
@@ -973,4 +973,46 @@ nav .fas {
     width: 100%;
     padding: 7px 5px;
 }
+}
+
+@media (max-width: 768px) and (orientation:landscape) {
+  .home-content {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 70px;
+  }
+  
+  .bg {
+    height: 270px;
+    width: 29%;
+  }
+  .home-content p {
+    font-size: 15px;
+  }
+  
+  .about{
+    padding: 100px 35px;
+  }
+  
+  .details {
+    margin: -20px 80px;
+  }
+  
+  .work-viewport {
+    height: 50vh;
+  }
+  
+  .btn-to-see {
+    margin: 200px 70px;
+  }
+  
+  .contact-form {
+    width: 65%;
+    margin: 2% 16%;
+  }
+  
+  .work {
+    height: 85vh;
+  }
+   
 }

@@ -772,9 +772,9 @@ nav .fas {
 @media screen and (max-width: 480px) {
  
   .home-content {
-    margin: 230px 50px;
+    margin: 360px 50px;
   }
-
+  
   .bg {
     height: 250px;
     width: 45%;

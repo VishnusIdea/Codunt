@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper,
+.content {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.content {
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+.content .section1 {
+  width: 100%;
+  height: 100vh;
+}
+
+.content .section1.hero {
+  background-image: url("./back.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  perspective: 500px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 150%;
+  object-fit: cover;
+}
+
+.image-container h1 {
+  color: white;
+  font-optical-sizing: auto;
+  font-family: "Pacifico", cursive;
+  float: inline-start;
+}
+
+.section1 h1 {
+  font-family: "Pacifico", cursive;
+  color: white;
+  font-size: 30px;
+  margin: 20px 500px;
+  width: 50%;
+}
+
+.box {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+}
+
+.box span {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-bottom: 7px solid #fff;
+  border-right: 7px solid #fff;
+  transform: rotate(45deg);
+  animation: animate 1.1s infinite ease-in-out;
+  animation-delay: 0s;
+  margin-top: 10px;
+}
+
+.box span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.box span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+}
+
+.contents {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.display {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(60%);
+}
+
+.title {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(30%);
+}
+
+.section2 {
+  width: 100%;
+  height: 100vh;
+}
+
+.section2 h2 {
+  font-family: "Playfair Display", serif;
+  color: white;
+  font-size: 84px;
+}
+
+.contact-form {
+  background: linear-gradient(
+    70deg,
+    rgb(0, 0, 0),
+    rgb(37, 139, 255),
+    rgba(255, 255, 255, 0.792)
+  );
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 80px rgb(0, 0, 0);
+  width: 25%;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  border: 3px solid black;
+  border-radius: 15px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background: bottom;
+  border: 3px solid;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: rgb(255, 255, 255);
+  color: black;
+}
+
+.greet {
+  font-family: "Permanent Marker", cursive;
+  color: white;
+  width: 40%;
+  font-size: 30px;
+  margin: -95px 35px;
+  z-index: 0;
+}
+
+.water {
+  width: 150%;
+  height: 130px;
+  margin: 300px;
+  z-index: 0;
+  position: absolute;
+}
+
+.ship {
+  width: 260px;
+  margin: 220px;
+  z-index: -2;
+}
+
+
+
+/* ----------------------- Media---------------------- */
+
+
+
+ 
+
+@media screen and (max-width: 834px) {
+
+    .section1 h1 {
+        font-size: 20px;
+        margin: 30px 66px;
+        width: 70%;
+      }
+    
+      .box span {
+        width: 40px;
+        height: 40px;
+      }
+    
+      .section2 h2 {
+        font-size: 40px;
+      }
+    
+      .show {
+        transform: translateX(15%);
+      }
+    
+      .contact-form {
+        width: 60%;
+     }
+     .display {
+        transform: translateX(30%);
+      }
+    
+      .greet {
+        width: 100%;
+        margin: 15px 35px;
+      }
+    
+      .ship {
+        width: 100px;
+        margin:1px 280px;
+      }
+    
+      .water {
+        width: 180%;
+        margin: -10px;
+      }
+
+  }
+ 
+
+ 
+
+  
+  /*---------------  mobile view------------------*/
+  
+
+@media screen and (max-width: 480px) {
+  .section1 h1 {
+    font-size: 20px;
+    margin: 30px 66px;
+    width: 70%;
+  }
+
+  .box span {
+    width: 40px;
+    height: 40px;
+  }
+
+  .section2 h2 {
+    font-size: 40px;
+  }
+
+  .show {
+    transform: translateX(15%);
+  }
+
+  .contact-form {
+    width: 60%;
+ }
+ .display {
+    transform: translateX(30%);
+  }
+
+  .greet {
+    width: 100%;
+    margin: 15px 35px;
+  }
+
+  .ship {
+    width: 100px;
+    margin: 5px;
+  }
+
+  .water {
+    width: 180%;
+    margin: -10px;
+  }
+  
+}
